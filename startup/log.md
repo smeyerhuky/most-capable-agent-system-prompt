@@ -14,7 +14,7 @@ Append new entries at the bottom. Do not edit previous entries.
 
 ## 2026-06-28T00:00:00Z — Initial Bundle Generation
 
-Generated the full AgentForge "Startup in a Box" documentation suite (34 files) from a founder design session. Session covered:
+Generated the full AgentForge "Startup in a Box" documentation suite (37 files) from a founder design session. Session covered:
 
 - DSL design and compilation model (`.agent` files, lexer → parser → AST → IR → runtime dispatch)
 - Gemma 4 MTP speculative decoding architecture and GPU cost analysis
