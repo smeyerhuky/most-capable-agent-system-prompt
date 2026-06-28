@@ -12,7 +12,7 @@ Each phase gate is a binary decision: **GO** or **NO-GO**. All criteria in a gat
 
 ---
 
-## Phase 1 Gate {#phase-1-gate}
+## Phase 1 Gate
 
 **Decision required by:** End of Month 2
 
