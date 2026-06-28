@@ -40,7 +40,7 @@ At $29/month average: **$140M–$209M SAM** (today). Growing to 2–3M developer
 
 ### SOM — Serviceable Obtainable Market
 
-Realistic 3-year capture: 5,000 paid users at blended $45/month average = **$2.7M ARR** by end of Year 3. This is conservative — Cursor went from 0 to $2B ARR in 2 years, but they had VC and a marketing budget. AgentForge is modeled as a bootstrapped/seed-funded PLG motion.
+Realistic 3-year capture (**base case**): ~1,180 paid users at a blended ~$47/month = **~$664K ARR** by end of Year 3, derived from the churn-netted model in [financial-model.md](financial-model.md) and reconciled with the bottoms-up in [revenue-model.md](revenue-model.md). The earlier "5,000 users / $2.7M ARR" figure is retained only as a **seed-accelerated-to-aggressive ceiling** — it implies Cursor-class PLG (0→$2B in 2 years *with* VC and marketing) and is not the planning number. Plan against ~$664K; treat $1.2M (seed-accelerated) as the stretch and $2.7–3.6M as the ceiling.
 
 ---
 

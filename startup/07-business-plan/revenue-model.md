@@ -113,6 +113,8 @@ timestamp: 2026-06-28T00:00:00Z
 
 ## Bedrock Pass-Through Mechanics
 
+> **Private-tier positioning:** the self-hosted Gemma tier's value is **privacy and VPC control, not price** — cheap open-weight inference is a commodity (~$0.33/1M output from many providers). The owned GPU fleet only beats hosted Gemma at high sustained batching utilization; until then the tier is served by reselling hosted Gemma. The amortized GPU costs below ($0.05–0.10/1M) are *high-utilization* figures — see the build-vs-buy break-even in [gpu-serving-design.md](../06-design/gpu-serving-design.md). Do not model fleet savings before utilization clears break-even (gate P3.6).
+
 Every dollar of Bedrock token spend is passed through to users at exact cost. This is a deliberate design choice that:
 
 1. Builds trust (users can verify by checking their own AWS Cost Explorer)
@@ -199,7 +201,7 @@ Target for SaaS: > 3×. AgentForge is well above target on all tiers due to PLG-
 | Enterprise | 3 | $6,000 | 11% |
 | **Total** | | **$53,950** | **100%** |
 
-Annual recurring revenue (Year 3): **~$647K ARR**. This is a conservative, default-alive projection. With a seed round and first sales hire: potential $2–3M ARR by Year 3.
+Annual recurring revenue (Year 3), **base case: ~$664K ARR** — this is the planning number, and the churn-netted model in [financial-model.md](financial-model.md) independently reproduces it (the mix table above and the bottoms-up ramp converge within ~2%). Two upside cases are now explicitly labeled rather than blended in: **seed-accelerated ~$1.2M ARR** (a $500K seed funds an earlier DevRel hire), and an **aggressive ceiling of ~$3.6M** that requires Cursor-class viral PLG and must not be budgeted against. The earlier "$2–3M by Year 3" line was an unlabeled upside; treat ~$664K as the number you plan and hire against.
 
 ---
 

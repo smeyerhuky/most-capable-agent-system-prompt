@@ -80,7 +80,11 @@ The compiler being MIT open-source means: if the founder is incapacitated, the c
 
 ## Hiring Sequence
 
-### Hire #1: DevRel / Community Manager (Month 7, at ~$14K MRR)
+> **Timeline note:** dates here are re-baselined to match the churn-netted financial model (see [financial-model.md](financial-model.md)). The old schedule (DevRel Month 7 / Infra Month 10) assumed revenue from Month 2, which is not achievable. Bootstrap and seed timelines diverge significantly — both are shown where they differ.
+
+### Hire #1: DevRel / Community Manager
+
+**Timing:** Month 18 (bootstrap, ~$10K MRR) — Month 9 (seed-funded, earlier acquisition support is the primary lever the seed buys)
 
 **Why this hire first:**
 - Phase 2 growth depends on community building (Discord, GitHub, blog, Twitter)
@@ -100,7 +104,9 @@ The compiler being MIT open-source means: if the founder is incapacitated, the c
 - Get 100 new GitHub stars
 - Interview 5 users and write a customer story
 
-### Hire #2: Infrastructure / Reliability Engineer (Month 10, at ~$25K MRR)
+### Hire #2: Infrastructure / Reliability Engineer
+
+**Timing:** Month 15 (seed-funded, ~$7K MRR) — post-break-even bootstrap (~Month 28–30, ~$35K MRR)
 
 **Why this hire second:**
 - GPU fleet management (Phase 3) requires dedicated ops attention
@@ -114,7 +120,9 @@ The compiler being MIT open-source means: if the founder is incapacitated, the c
 
 **Compensation:** $130K–$150K base + 0.5% equity
 
-### Hire #3: Full-Stack Engineer (Month 13, at ~$40K MRR)
+### Hire #3: Full-Stack Engineer
+
+**Timing:** post-break-even, when MRR sustains ~$40K (bootstrap ~Month 32–36; earlier with seed)
 
 **Why this hire third:**
 - Web IDE features (Phase 2–3) need dedicated engineering bandwidth
@@ -127,7 +135,9 @@ The compiler being MIT open-source means: if the founder is incapacitated, the c
 
 **Compensation:** $140K–$160K base + 0.5% equity
 
-### Hire #4: First Sales / Account Executive (Month 18, at ~$100K MRR / ~$1.2M ARR)
+### Hire #4: First Sales / Account Executive
+
+**Timing:** at $1M ARR (the MRR trigger, not a fixed month — on the bootstrap path this is ~Year 4; seed-accelerated pulls it closer to Year 3)
 
 **Why this hire at $1M ARR:**
 - YC Dessaigne: "Hire your first salesperson at $1M ARR. Not before."
@@ -157,11 +167,11 @@ The compiler being MIT open-source means: if the founder is incapacitated, the c
 
 ## Organizational Principles
 
-**Phase 1 (1 person):** Founder does everything. Ship fast, stay focused.
+**Phase 1 (Months 1–18 bootstrap / 1–9 seed, 1 person):** Founder does everything. Ship fast, stay focused.
 
-**Phase 2 (2 people):** Founder (product + sales) + DevRel (community + content). Weekly 1:1, shared OKRs.
+**Phase 2 (post-DevRel hire, 2 people):** Founder (product + sales) + DevRel (community + content). Weekly 1:1, shared OKRs.
 
-**Phase 3 (4 people):** Founder (product + strategic sales) + DevRel + Infra Engineer + Full-Stack Engineer. Weekly team standup, monthly planning.
+**Phase 3 (post-infra hire, 3–4 people):** Founder (product + strategic sales) + DevRel + Infra Engineer (+ Full-Stack when MRR sustains it). Weekly team standup, monthly planning.
 
 **At $1M ARR (5 people):** Add first AE. Founder spends 50% on product, 30% on strategic sales (enterprise), 20% on management.
 

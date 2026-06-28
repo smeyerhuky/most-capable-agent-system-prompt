@@ -29,8 +29,9 @@ The compiler catches errors before any API call fires. The runtime handles every
 ## Traction
 
 - [Pre-launch / Phase 1] — Building
-- [Phase 2 target] — 500 GitHub stars, 1,000 VS Code installs, $2,900 MRR
-- [Phase 3 target] — $10,000 MRR, 2 enterprise pilots
+- [Phase 1 target — Month 6] — 10 paying users, $290 MRR, DSL-stickiness gate passed
+- [Phase 2 target — Month 12] — 1,000 VS Code installs, 100 active pipelines, $3,000 MRR (GitHub stars tracked as a health signal, not a gate)
+- [Phase 3 target — Month 18] — $10,000 MRR, 2 enterprise pilots (VPC/privacy-led)
 
 ---
 
@@ -47,7 +48,7 @@ The compiler catches errors before any API call fires. The runtime handles every
 
 **Subscription-first.** $29/month Builder, $99/seat/month Team, $2,000+/month Enterprise.
 
-**Zero-markup compute pass-through.** Bedrock token costs billed at cost to users — no margin taken on model API spend. AgentForge earns margin on the subscription and on the private GPU tier (amortized GPU cost at ~10× below API prices).
+**Zero-markup compute pass-through.** Bedrock token costs billed at cost to users — no margin taken on model API spend. AgentForge earns margin on the subscription. The self-hosted Gemma tier is a **privacy/VPC differentiator first**; it becomes a margin lever only at high utilization (a smaller open model runs far cheaper than frontier Bedrock for tasks that tolerate it).
 
 **Product-led growth.** Open-source compiler → VS Code extension → GitHub Actions → template marketplace. No marketing spend until $1M ARR.
 
@@ -58,7 +59,7 @@ The compiler catches errors before any API call fires. The runtime handles every
 Three forces converging:
 
 1. **MCP (Model Context Protocol)** is becoming the standard for agent tooling — an MCP-native harness has ecosystem leverage from day one
-2. **Gemma 4 MoE + MTP speculative decoding** makes self-hosted models genuinely production-quality, enabling a private GPU tier at 100× lower cost than Bedrock
+2. **Gemma 4 MoE + MTP speculative decoding** makes self-hosted models genuinely production-quality, enabling a **privacy-first in-VPC tier** — and, at scale, inference that is ~45× cheaper than frontier Bedrock models for tasks that tolerate a smaller model
 3. **Developer frustration is peak** — Cursor's $2B ARR proves the market exists and developers are actively seeking better tools
 
 ---
@@ -75,13 +76,25 @@ YC data: 74% of YC dev tool companies have only technical co-founders. This is t
 
 **Seed round:** $500,000 for 18 months of runway.
 
-**Use of funds:**
-- 60% — Founder salary (18 months)
-- 20% — Infrastructure (GPU fleet, AWS, tooling)
-- 15% — Marketing budget (Phase 2 launch, conference presence)
-- 5% — Legal, accounting, ops
+<!-- Use of funds reconciled with financial-model.md:88-95 (PR review r3488613241).
+     Previous bullet list was stale: it stated 60% founder salary (implying ~$300K at $10K/mo),
+     omitted the DevRel and infra-engineer hires entirely, and used rounded percentages that no
+     longer summed to the rebuilt $500K table. The table below mirrors financial-model.md exactly
+     so investors reading the executive summary and the full model see the same numbers. -->
+**Use of funds (18-month runway):**
 
-**What this buys:** Through $10,000 MRR and 2 enterprise pilots (Phase 3 gate) — the inflection point at which a Series A becomes viable and the company is default-alive on subscription revenue alone.
+| Category | Amount | % |
+|---|---:|---:|
+| Founder salary (18 × $10K) | $180,000 | 36% |
+| DevRel/Community hire (M9–M18, 10 mo × $12K) | $120,000 | 24% |
+| Infra engineer (M15–M18, 4 mo × $15K) | $60,000 | 12% |
+| Infrastructure (AWS scaling) | $55,000 | 11% |
+| GPU fleet (utilization-gated — see Financial Model) | $30,000 | 6% |
+| Marketing + conference | $25,000 | 5% |
+| Legal, accounting, ops | $30,000 | 6% |
+| **Total** | **$500,000** | **100%** |
+
+**What this buys:** runway through the **~$178K peak cash trough** (the corrected, churn-netted break-even is ~Month 25 on a realistic build timeline — not Month 9), plus an earlier DevRel hire that converts the ~$664K base case toward the ~$1.2M seed-accelerated case. The Phase-3 gate ($10K MRR + 2 enterprise pilots) remains the Series-A inflection. See [Financial Model](financial-model.md) for the reconciled base/upside cases.
 
 ---
 

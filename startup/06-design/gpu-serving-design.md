@@ -10,9 +10,34 @@ timestamp: 2026-06-28T00:00:00Z
 
 ---
 
-## Why This Stack
+## What this tier is actually for (positioning)
 
-The private GPU tier is the cost-competitive moat of AgentForge. The selection logic:
+**The private tier's moat is privacy and control, not price.** Cheap open-weight inference is a commodity: Gemma 4 26B-A4B is served by ~12 providers at roughly **$0.06 / $0.33 per 1M input/output tokens**. Anyone can buy that. What competitors cannot trivially offer is *your data never leaving your VPC* — in-VPC deployment, no third-party data processor, audit logs, and a model you control. That is the enterprise wedge. Lead every enterprise conversation with it.
+
+Cost is a *secondary, utilization-dependent* benefit, not the headline. See the break-even below before assuming the fleet saves money.
+
+### Unit-economics reality (build vs buy)
+
+A single `g5.xlarge` spot instance is ~$0.35/hr. At the design target of 50 tokens/sec **single-stream**, that is ~180K output tokens/hr → **~$1.94 per 1M output tokens** — which is *more expensive than simply reselling hosted Gemma at $0.33/1M*. The owned fleet only wins through continuous batching:
+
+| Sustained concurrent requests | Effective throughput | Approx. cost / 1M output tokens | vs hosted Gemma ($0.33) |
+|---:|---|---:|---|
+| 1 (single stream) | 50 tok/s | ~$1.94 | 6× worse |
+| ~5 | ~250 tok/s | ~$0.39 | roughly par |
+| ~20 (batched, the target) | ~1,000 tok/s | ~$0.10 | ~3× better |
+| idle ("min capacity 1, always warm") | — | unbounded $/token | strictly worse |
+
+**Conclusion / build-vs-buy rule:** until the private tier sustains the high-batching utilization that clears the ~$0.33 hosted line, **do not run an owned fleet — resell hosted Gemma.** A Phase-3 startup running `min capacity 1, always warm` is paying for a mostly-idle A10G to save fractions of a cent on Bedrock. Build the fleet only when measured utilization (gate **P3.6** in [go-no-go-criteria.md](../04-validation/go-no-go-criteria.md)) crosses the break-even. The fleet is a margin lever that *requires scale to exist* — it is not a launch differentiator.
+
+### Cost framing for marketing (corrected)
+
+The bundle previously claimed both "10× below API prices" (revenue-model) and "100× lower cost than Bedrock" (exec-summary). The defensible numbers: Gemma 4 26B output at $0.33/1M vs frontier Claude on Bedrock (~$15/1M output) is **~45× cheaper** — one to two orders of magnitude, driven by running a smaller, weaker model, not by owning hardware. Quote "**dramatically cheaper for tasks that tolerate a smaller model**," never a single inflated multiple, and never imply the saving is free of quality trade-off.
+
+---
+
+## Why This Stack (model + serving selection)
+
+Given the tier exists for privacy first and cost-at-scale second, the stack selection logic is:
 
 - **Gemma 4-26B-A4B (MoE):** 26B total parameters, 4B active per token. Quality close to 31B dense models at the inference cost of a 4B model. The right architecture for cost-efficient serving.
 - **AWQ quantization:** 4-bit weights reduce VRAM from ~40GB (BF16) to ~12GB on A10G. Negligible quality degradation (<1% on coding benchmarks).
