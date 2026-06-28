@@ -14,7 +14,7 @@ timestamp: 2026-06-28T00:00:00Z
 
 The `.agent` file format is a declarative domain-specific language for defining multi-step LLM agent workflows. Programs written in `.agent` are compiled to an Intermediate Representation (IR) and executed by the AgentForge runtime.
 
-A `.agent` program consists of one or more `pipeline` declarations. Each pipeline contains `step` declarations that define the agents's tasks, the tools they use, the models they call, and the data they produce.
+A `.agent` program consists of one or more `pipeline` declarations. Each pipeline contains `step` declarations that define the agent's tasks, the tools they use, the models they call, and the data they produce.
 
 ---
 
