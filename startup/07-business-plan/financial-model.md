@@ -14,7 +14,7 @@ All figures in USD. US-based sole founder. This model was rebuilt to fix three e
 
 ## Reconciliation note (read first)
 
-The bundle previously stated three different Year-3 ARR numbers: ~$648K (revenue-model.md, bottoms-up), $2.7M (market-analysis.md, SOM), and $3.6M (this file, top-line). They are now reconciled into one base case and two clearly-labeled upside cases:
+The bundle previously stated three different Year-3 ARR numbers: ~$647K (revenue-model.md, bottoms-up), $2.7M (market-analysis.md, SOM), and $3.6M (this file, top-line). They are now reconciled into one base case and two clearly-labeled upside cases:
 
 | Case | Year-3 ARR | What it assumes |
 |---|---:|---|

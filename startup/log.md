@@ -34,7 +34,7 @@ Author: Founder session via Claude Code
 
 Revised three areas after a critical review of the bundle's internal consistency:
 
-1. **Financial model rebuilt** (`07-business-plan/financial-model.md`): revenue now starts Month 6 (realistic solo build), churn is netted into every month, and the three conflicting Year-3 ARR figures ($648K / $2.7M / $3.6M) are reconciled into one base case (~$664K) plus explicitly-labeled seed-accelerated (~$1.2M) and aggressive (~$3.6M) cases. Corrected break-even: ~Month 25; peak cash trough ~$178K (was claimed Month 9 / $66K).
+1. **Financial model rebuilt** (`07-business-plan/financial-model.md`): revenue now starts Month 6 (realistic solo build), churn is netted into every month, and the three conflicting Year-3 ARR figures ($647K / $2.7M / $3.6M) are reconciled into one base case (~$664K) plus explicitly-labeled seed-accelerated (~$1.2M) and aggressive (~$3.6M) cases. Corrected break-even: ~Month 25; peak cash trough ~$178K (was claimed Month 9 / $66K).
 
 2. **Validation gates re-baselined** (`04-validation/go-no-go-criteria.md`): gate dates moved to Month 6/12/18; added a dedicated DSL-stickiness gate (Phase 1.5: week-4 author retention, returning-author rate, pipeline-depth growth, beyond-template rate, model-portability usage); demoted GitHub stars from a binary gate to a health signal; added GPU build-vs-buy break-even gate (P3.6).
 
