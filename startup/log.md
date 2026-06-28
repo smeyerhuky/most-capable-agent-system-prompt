@@ -41,3 +41,22 @@ Revised three areas after a critical review of the bundle's internal consistency
 3. **GPU tier repositioned** (`06-design/gpu-serving-design.md`, `07-business-plan/revenue-model.md`, `executive-summary.md`, `market-analysis.md`): the private tier's moat is now framed as privacy/VPC control, not price. Added build-vs-buy unit economics (owned fleet only beats hosted Gemma's $0.33/1M at high batching utilization). Corrected the inconsistent "10× / 100× cheaper" claims to the defensible ~45×-vs-frontier-Bedrock figure.
 
 Author: Critical review revision via Claude
+
+---
+
+## 2026-06-28T22:13:32Z — executive-summary Use-of-Funds Reconciliation
+
+**Why:** PR review comment r3488613241 identified that the "Use of funds" bullet list in
+`executive-summary.md` was inconsistent with the rebuilt `financial-model.md` table. Specifically:
+- The bullet list stated 60% founder salary, implying ~$300K at $10K/mo × 18 months, whereas the
+  financial model correctly shows $180K = 36%.
+- DevRel/Community hire ($120K, 24%) and Infra engineer ($60K, 12%) were missing entirely.
+- Infrastructure, marketing, and legal percentages were stale rounded approximations.
+
+**How:** Replaced the 4-bullet list with a Markdown table that mirrors `financial-model.md:88-95`
+line-for-line, including the same category names, dollar amounts, and percentages. Added an HTML
+comment above the table to explain the provenance of the change so future editors can trace it.
+
+Files changed: `startup/07-business-plan/executive-summary.md`
+
+Author: Copilot coding agent (r3488613241 fix)

@@ -76,11 +76,23 @@ YC data: 74% of YC dev tool companies have only technical co-founders. This is t
 
 **Seed round:** $500,000 for 18 months of runway.
 
-**Use of funds:**
-- 60% — Founder salary (18 months)
-- 20% — Infrastructure (GPU fleet, AWS, tooling)
-- 15% — Marketing budget (Phase 2 launch, conference presence)
-- 5% — Legal, accounting, ops
+<!-- Use of funds reconciled with financial-model.md:88-95 (PR review r3488613241).
+     Previous bullet list was stale: it stated 60% founder salary (implying ~$300K at $10K/mo),
+     omitted the DevRel and infra-engineer hires entirely, and used rounded percentages that no
+     longer summed to the rebuilt $500K table. The table below mirrors financial-model.md exactly
+     so investors reading the executive summary and the full model see the same numbers. -->
+**Use of funds (18-month runway):**
+
+| Category | Amount | % |
+|---|---:|---:|
+| Founder salary (18 × $10K) | $180,000 | 36% |
+| DevRel/Community hire (M9–M18, 10 mo × $12K) | $120,000 | 24% |
+| Infra engineer (M15–M18, 4 mo × $15K) | $60,000 | 12% |
+| Infrastructure (AWS scaling) | $55,000 | 11% |
+| GPU fleet (utilization-gated — see Financial Model) | $30,000 | 6% |
+| Marketing + conference | $25,000 | 5% |
+| Legal, accounting, ops | $30,000 | 6% |
+| **Total** | **$500,000** | **100%** |
 
 **What this buys:** runway through the **~$178K peak cash trough** (the corrected, churn-netted break-even is ~Month 25 on a realistic build timeline — not Month 9), plus an earlier DevRel hire that converts the ~$664K base case toward the ~$1.2M seed-accelerated case. The Phase-3 gate ($10K MRR + 2 enterprise pilots) remains the Series-A inflection. See [Financial Model](financial-model.md) for the reconciled base/upside cases.
 
