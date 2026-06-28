@@ -189,5 +189,5 @@ Runtime router enhancement: route GPU tier requests to the nearest healthy GPU f
 
 - [System Architecture](system-architecture.md) — where the GPU fleet fits in the overall system
 - [Runtime Design](runtime-design.md) — the `GemmaVLLMAdapter` that calls this fleet
-- [PRD Phase 3A tasks](../02-prd/phase-3-scale.md#milestone-3a-private-gpu-tier-week-17-20)
+- [PRD Phase 3A tasks](../02-prd/phase-3-scale.md#milestone-3a-private-gpu-tier-week-1720)
 - [Revenue Model](../07-business-plan/revenue-model.md) — GPU tier billing and cost structure
