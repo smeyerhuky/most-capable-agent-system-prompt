@@ -36,7 +36,7 @@ Three moats, ordered by durability:
 
 1. **The language itself.** A well-designed DSL with a growing stdlib and ecosystem is hard to copy. Every user becomes a co-author of the ecosystem (publishing templates, tool connectors, cookbook patterns).
 2. **MCP protocol compatibility.** Being the first managed cloud that speaks MCP natively means every MCP-compatible agent (Claude Desktop, Cursor, Zed) can use AgentForge as a backend. Network effects compound.
-3. **The private GPU tier.** Self-hosted Gemma 4 at $0.10/1M tokens vs. $10/1M tokens on flagship APIs is a 100× cost advantage at scale. Once users route high-volume pipelines through the private tier, switching costs are real.
+3. **The private GPU tier.** The moat is **privacy and VPC control, not price** — cheap open-weight inference is a commodity ($0.33/1M output from ~12 providers). What competitors cannot trivially match is data-never-leaves-your-VPC: in-VPC deployment, no third-party data processor, audit logs, and a model you control. At high batching utilization the fleet also delivers ~45× lower cost than frontier Bedrock models for tasks that tolerate a smaller model — but that saving is utilization-dependent and is a secondary benefit, not the headline. Once enterprises route high-volume pipelines through the private tier, switching costs are real.
 
 ---
 

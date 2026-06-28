@@ -86,13 +86,15 @@ The seed does two things the bootstrap cannot: covers the ~$178K trough with com
 | Category | Amount | % |
 |---|---:|---:|
 | Founder salary (18 × $10K) | $180,000 | 36% |
-| DevRel/Community hire (from M9) | $120,000 | 24% |
-| Infra engineer (from M15) | $60,000 | 12% |
+| DevRel/Community hire (M9–M18, 10 mo × $12K†) | $120,000 | 24% |
+| Infra engineer (M15–M18, 4 mo × $15K†) | $60,000 | 12% |
 | Infrastructure (AWS scaling) | $55,000 | 11% |
 | GPU fleet (only if Phase-3 utilization justifies — see note) | $30,000 | 6% |
 | Marketing + conference | $25,000 | 5% |
 | Legal, accounting, ops | $30,000 | 6% |
 | **Total** | **$500,000** | **100%** |
+
+†Seed scenario uses full-time employee rates ($12K/mo DevRel ≈ $144K/yr, $15K/mo Infra ≈ $180K/yr Bay Area senior eng), not the $7K/mo bootstrap contractor rate from the P&L table above.
 
 > GPU note: the $30K GPU line is gated on sustained utilization, not spent on schedule. Until the private fleet clears the utilization break-even in [gpu-serving-design.md](../06-design/gpu-serving-design.md), the private tier is served by **reselling hosted Gemma 4** ($0.33/1M output, commodity), which is cheaper than an under-utilized owned GPU. Build the fleet when volume — not the roadmap — says so.
 
